@@ -210,8 +210,8 @@ tab1, tab2, tab3, tab4 = st.tabs([
 with tab1:
     st.markdown('<p class="sec-label">Step 1 — Choosing the right K</p>', unsafe_allow_html=True)
     st.markdown(
-        "I used the **Elbow Method** (WCSS) and **Silhouette Score** together to decide K. "
-        "The elbow bends at K=3 and silhouette peaks there too, so that's what I went with."
+        "We used the **Elbow Method** (WCSS) and **Silhouette Score** together to decide K. "
+        "The elbow bends at K=3 and silhouette peaks there too, so that's what we went with."
     )
 
     wcss, sils = compute_elbow(scaled_data, int(random_seed))
@@ -252,7 +252,7 @@ with tab1:
 with tab2:
     st.markdown('<p class="sec-label">Step 2 — Visualising clusters with PCA</p>', unsafe_allow_html=True)
     st.markdown(
-        "Since we have 20 features, I used **PCA** to reduce to 2 dimensions so I can "
+        "Since we have 20 features, we used **PCA** to reduce to 2 dimensions so we can "
         "actually see the clusters. The two PCs explain the variance shown on each axis."
     )
 
@@ -326,7 +326,7 @@ with tab3:
     plt.close()
 
     # Interpretation note (student-style)
-    with st.expander("📝 My interpretation of the clusters"):
+    with st.expander("📝 Our interpretation of the clusters"):
         st.markdown("""
 **Cluster 0 — Developing / Low-income countries**  
 High birth rate, high infant mortality, low GDP, low internet usage.  
